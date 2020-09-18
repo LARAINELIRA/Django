@@ -1,5 +1,9 @@
 from django.urls import path
+from .views import home, login
+
+#esta url en core se encarga de rutear las views
 
 urlpatterns = [
-   # path('admin/', admin.site.urls),
+   path('', home, name="home"),
+   path('login', login, name="login"),
 ]
