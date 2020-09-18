@@ -4,12 +4,12 @@ from django.shortcuts import render
 
 def home(request):
 
-    return render(request, 'core/home.html')
+    return render(request, 'index.html')
 
 def login(request):
 
-    return render(request, 'core/login.html')
+    return render(request, 'login.html')
 
-def registrar(request):
+def registro(request):
 
-    return render(request, 'core/registrar.html')
+    return render(request, 'registro.html')

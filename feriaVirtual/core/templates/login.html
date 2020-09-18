@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio de Sesion{% endblock %}
+
+{% block content %}
+
+<div class="contenedor-login centrar-contenedor">
+    <div class="ventana-login">
+        <div class="ventana-titulo">
+            <h2 class="ventana-titulo__h1">Ingresa a tu Cuenta</h2>
+        </div>
+        <div class="formulario-login">
+        <input type="email" class="formulario-login__input focus:border-orange-500" placeholder="Correo Electrónico">
+            <input type="password" class="formulario-login__input focus:border-orange-500" placeholder="Contraseña">
+            <button type="submit" class="formulario-login__btn btn">Entrar</button>
+        </div>
+        <div class="enlace-sign">
+            <span class="enlace-sign__span">¿No posees cuenta? <a href="#" class="enlace-sign__a">Puedes registrarte aquí.</a></span>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

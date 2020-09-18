@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import home, login, registrar
+from .views import home, login, registro
 
 #esta url en core se encarga de rutear las views
 
 urlpatterns = [
-   path('',home, name="home"),
-   path('login/',login, name="login"),
-   path('registrar/',registrar, name="registrar")
+   path('', home, name="home"),
+   path('login/', login, name="login"),
+   path('registro/', registro, name="registro")
 ]
