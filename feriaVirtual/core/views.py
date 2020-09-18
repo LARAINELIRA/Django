@@ -9,3 +9,7 @@ def home(request):
 def login(request):
 
     return render(request, 'core/login.html')
+
+def registrar(request):
+
+    return render(request, 'core/registrar.html')
