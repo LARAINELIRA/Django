@@ -224,15 +224,15 @@ h6{
 .slider__anterior{
     @apply absolute;
     @apply inset-y-0;
-    @apply text-green-500 ;
-    @apply text-5xl text-opacity-25;
+    @apply text-green-500;
+    @apply text-5xl text-opacity-50;
 }
 
 .slider__siguiente{
     @apply absolute;
     @apply inset-y-0;
     @apply text-green-500 ;
-    @apply text-5xl text-opacity-25;
+    @apply text-5xl text-opacity-50;
     right: 0;
 }
 
@@ -320,6 +320,7 @@ h6{
 }
 
     /* =====================================Footer===================================== */
+    
     /* =====================================Login====================================== */
 
 .contenedor-login{
@@ -345,7 +346,7 @@ h6{
     @apply m-2;
 }
 .formulario-login__input{
-    @apply rounded-lg border-t-4 bg-gray-100;
+    @apply rounded-lg border-t-2 bg-gray-100;
     @apply my-4 p-2;
 }
 .formulario-login__btn{
@@ -366,6 +367,70 @@ h6{
 }
 
     /* =====================================Login====================================== */
+
+    /* =====================================Registro====================================== */
+
+.registro-contenedor{
+    @apply h-screen;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+}
+
+.ventana-registro{
+    @apply bg-white;
+    @apply rounded-lg;
+    @apply mx-5 px-5;
+    min-width: 50%;
+}
+
+.formulario-registro__input{
+    @apply bg-gray-100 p-2 m-2 border-2 rounded-lg;
+
+}
+
+.formulario-registro__checkbox{
+    @apply relative;
+    @apply bg-white appearance-none outline-none;
+    @apply border-2 rounded-full;
+    @apply duration-100;
+    width: 50px;
+    height: 30px;
+}
+
+input.formulario-registro__checkbox:after {
+    content: "";
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 26px; height: 26px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid #e2e8f0;
+}
+
+input.formulario-registro__checkbox:checked {
+    border-color: #4ED164;
+    background-color: #4ED164;
+    transition-duration: 200ms;
+}
+
+input.formulario-registro__checkbox:checked:after {
+    left: 20px;
+}
+
+.contenedor-select{
+    @apply flex items-center relative m-2;
+    @apply relative;
+    @apply m-2;
+}
+
+.formulario-registro__select{
+    @apply bg-gray-100 appearance-none;
+    @apply border-2 rounded-lg;
+    @apply w-full;
+    @apply p-2;
+}
+
+    /* =====================================Registro====================================== */
 
 
 }

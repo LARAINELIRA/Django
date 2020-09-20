@@ -3,58 +3,53 @@
 {% block title %}Registro{% endblock %}
 
 {% block content %}
-
-<div class="registro_contenedor">
+<div class="registro_contenedor centrar-contenedor">
     
     <div class="ventana_registro">
         <div class="ventana-titulo">
             <h2 class="ventana-titulo__h1">Formulario de Registro</h2>
         </div>
 
-        <div class="formulario_registro grid grid-cols-3">
-            <input type="text" class="formulario-login__input focus:border-orange-500" placeholder="Rut o Pasaporte">
-            <input type="text" class="formulario-login__input focus:border-orange-500" placeholder="Rut o Pasaporte">
-            <input type="date" class="formulario-login__input focus:border-orange-500" placeholder="Fecha de Nacimiento">
+        <div class="formulario_registro grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <input type="text" class="formulario-registro__input focus:outline-none focus:border-orange-500" placeholder="Rut o Pasaporte">
+            <div class="centrar-contenedor">
+                <p class="font-lato mx-4">Es pasaporte?</p>
+                <input type="checkbox" class="formulario-registro__checkbox">
+            </div>
+            <input type="date" class="formulario-registro__input focus:outline-none appearance-none focus:outline-none focus:border-orange-500" placeholder="Fecha de Nacimiento">
 
-            <input type="text" class="formulario-login__input focus:border-orange-500" placeholder="Nombre">
-            <input type="text" class="formulario-login__input focus:border-orange-500" placeholder="Apellido Paterno">
-            <input type="text" class="formulario-login__input focus:border-orange-500" placeholder="Apellido Materno">
+            <input type="text" class="formulario-registro__input focus:outline-none focus:border-orange-500" placeholder="Nombre">
+            <input type="text" class="formulario-registro__input focus:outline-none focus:border-orange-500" placeholder="Apellido Paterno">
+            <input type="text" class="formulario-registro__input focus:outline-none focus:border-orange-500" placeholder="Apellido Materno">
 
-            <input type="email" class="formulario-login__input col-span-2 focus:border-orange-500" placeholder="Correo Electronico">
-            <input type="number" class="formulario-login__input focus:border-orange-500" placeholder="9 5511 4581">
+            <input type="email" class="formulario-registro__input focus:outline-none col-span-2 focus:border-orange-500" placeholder="Correo Electronico">
+            <input type="number" class="formulario-registro__input focus:outline-none appearance-none focus:border-orange-500" placeholder="9 5511 4581">
 
-            <input type="text" class="formulario-login__input col-span-3 focus:border-orange-500" placeholder="Direccion">
-
-            <select class="formulario-login__input focus:border-orange-500">
-                <option>Region</option>
-            </select>
-            <select class="formulario-login__input focus:border-orange-500">
-                <option>Provincia</option>
-            </select>
-            <select class="formulario-login__input focus:border-orange-500">
-                <option>Comuna</option>
-            </select>
+            <input type="text" class="formulario-registro__input focus:outline-none col-span-3 focus:border-orange-500" placeholder="Direccion">
             
-            <input type="password" class="formulario-login__input focus:border-orange-500" placeholder="Contraseña">
-            <input type="password" class="formulario-login__input focus:border-orange-500" placeholder="Repita Contraseña">
+            <div class="contenedor-select">
+                <select class="formulario-registro__select focus:outline-none focus:border-orange-500">
+                    <option>Region</option>
+                </select>
+                <i class="fas fa-angle-down absolute right-0 mr-2"></i>
+            </div>
+            <div class="contenedor-select">
+                <select class="formulario-registro__select focus:outline-none focus:border-orange-500">
+                    <option>Provincia</option>
+                </select>
+                <i class="fas fa-angle-down absolute right-0 mr-2"></i>
+            </div>
+            <div class="contenedor-select">
+                <select class="formulario-registro__select focus:outline-none focus:border-orange-500">
+                    <option>Comuna</option>
+                </select>
+                <i class="fas fa-angle-down absolute right-0 mr-2"></i>
+            </div>
+            
+            <input type="password" class="formulario-registro__input focus:outline-none focus:border-orange-500" placeholder="Contraseña">
+            <input type="password" class="formulario-registro__input focus:outline-none focus:border-orange-500" placeholder="Repita Contraseña">
 
-            <button type="submit" class="formulario-login__btn btn col-span-3">Entrar</button>
-        </div>
-    </div>
-</div>
-
-<div class="contenedor-login centrar-contenedor">
-    <div class="ventana-login">
-        <div class="ventana-titulo">
-            <h2 class="ventana-titulo__h1">Ingresa a tu Cuenta</h2>
-        </div>
-        <div class="formulario-login">
-        <input type="email" class="formulario-login__input focus:border-orange-500" placeholder="Correo Electrónico">
-            <input type="password" class="formulario-login__input focus:border-orange-500" placeholder="Contraseña">
-            <button type="submit" class="formulario-login__btn btn">Entrar</button>
-        </div>
-        <div class="enlace-sign">
-            <span class="enlace-sign__span">¿No posees cuenta? <a href="#" class="enlace-sign__a">Puedes registrarte aquí.</a></span>
+            <button type="submit" class="formulario-login__btn btn col-span-3 m-2 my-4">Registrarse</button>
         </div>
     </div>
 </div>

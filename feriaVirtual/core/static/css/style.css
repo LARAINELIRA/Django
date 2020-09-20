@@ -881,7 +881,7 @@ h6{
   color: #48bb78;
   color: rgba(72, 187, 120, var(--text-opacity));
   font-size: 3rem;
-  --text-opacity: 0.25;
+  --text-opacity: 0.5;
 }
 
 .slider__siguiente{
@@ -892,7 +892,7 @@ h6{
   color: #48bb78;
   color: rgba(72, 187, 120, var(--text-opacity));
   font-size: 3rem;
-  --text-opacity: 0.25;
+  --text-opacity: 0.5;
   right: 0;
 }
 
@@ -1059,7 +1059,7 @@ h6{
 
 .formulario-login__input{
   border-radius: 0.5rem;
-  border-top-width: 4px;
+  border-top-width: 2px;
   --bg-opacity: 1;
   background-color: #f7fafc;
   background-color: rgba(247, 250, 252, var(--bg-opacity));
@@ -1099,6 +1099,96 @@ h6{
 }
 
 /* =====================================Login====================================== */
+
+/* =====================================Registro====================================== */
+
+.registro-contenedor{
+  height: 100vh;
+  background: url('../img/bg.jpg');
+  background-size: cover;
+}
+
+.ventana-registro{
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  border-radius: 0.5rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  min-width: 50%;
+}
+
+.formulario-registro__input{
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-width: 2px;
+  border-radius: 0.5rem;
+}
+
+.formulario-registro__checkbox{
+  position: relative;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border-width: 2px;
+  border-radius: 9999px;
+  transition-duration: 100ms;
+  width: 50px;
+  height: 30px;
+}
+
+input.formulario-registro__checkbox:after {
+  content: "";
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 26px; height: 26px;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid #e2e8f0;
+}
+
+input.formulario-registro__checkbox:checked {
+  border-color: #4ED164;
+  background-color: #4ED164;
+  transition-duration: 200ms;
+}
+
+input.formulario-registro__checkbox:checked:after {
+  left: 20px;
+}
+
+.contenedor-select{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0.5rem;
+  position: relative;
+  margin: 0.5rem;
+}
+
+.formulario-registro__select{
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-width: 2px;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+/* =====================================Registro====================================== */
 
 .space-y-0 > :not(template) ~ :not(template){
   --space-y-reverse: 0;
@@ -21990,7 +22080,7 @@ h6{
     color: #48bb78;
     color: rgba(72, 187, 120, var(--text-opacity));
     font-size: 3rem;
-    --text-opacity: 0.25;
+    --text-opacity: 0.5;
   }
 
   .sm\:slider__siguiente{
@@ -22001,7 +22091,7 @@ h6{
     color: #48bb78;
     color: rgba(72, 187, 120, var(--text-opacity));
     font-size: 3rem;
-    --text-opacity: 0.25;
+    --text-opacity: 0.5;
     right: 0;
   }
 
@@ -22168,7 +22258,7 @@ h6{
 
   .sm\:formulario-login__input{
     border-radius: 0.5rem;
-    border-top-width: 4px;
+    border-top-width: 2px;
     --bg-opacity: 1;
     background-color: #f7fafc;
     background-color: rgba(247, 250, 252, var(--bg-opacity));
@@ -22208,6 +22298,96 @@ h6{
   }
 
   /* =====================================Login====================================== */
+
+  /* =====================================Registro====================================== */
+
+  .sm\:registro-contenedor{
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+  }
+
+  .sm\:ventana-registro{
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    border-radius: 0.5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    min-width: 50%;
+  }
+
+  .sm\:formulario-registro__input{
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-width: 2px;
+    border-radius: 0.5rem;
+  }
+
+  .sm\:formulario-registro__checkbox{
+    position: relative;
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    border-width: 2px;
+    border-radius: 9999px;
+    transition-duration: 100ms;
+    width: 50px;
+    height: 30px;
+  }
+
+  input.sm\:formulario-registro__checkbox:after {
+    content: "";
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 26px; height: 26px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid #e2e8f0;
+  }
+
+  input.sm\:formulario-registro__checkbox:checked {
+    border-color: #4ED164;
+    background-color: #4ED164;
+    transition-duration: 200ms;
+  }
+
+  input.sm\:formulario-registro__checkbox:checked:after {
+    left: 20px;
+  }
+
+  .sm\:contenedor-select{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0.5rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+
+  .sm\:formulario-registro__select{
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* =====================================Registro====================================== */
 
   .sm\:space-y-0 > :not(template) ~ :not(template){
     --space-y-reverse: 0;
@@ -43034,7 +43214,7 @@ h6{
     color: #48bb78;
     color: rgba(72, 187, 120, var(--text-opacity));
     font-size: 3rem;
-    --text-opacity: 0.25;
+    --text-opacity: 0.5;
   }
 
   .md\:slider__siguiente{
@@ -43045,7 +43225,7 @@ h6{
     color: #48bb78;
     color: rgba(72, 187, 120, var(--text-opacity));
     font-size: 3rem;
-    --text-opacity: 0.25;
+    --text-opacity: 0.5;
     right: 0;
   }
 
@@ -43212,7 +43392,7 @@ h6{
 
   .md\:formulario-login__input{
     border-radius: 0.5rem;
-    border-top-width: 4px;
+    border-top-width: 2px;
     --bg-opacity: 1;
     background-color: #f7fafc;
     background-color: rgba(247, 250, 252, var(--bg-opacity));
@@ -43252,6 +43432,96 @@ h6{
   }
 
   /* =====================================Login====================================== */
+
+  /* =====================================Registro====================================== */
+
+  .md\:registro-contenedor{
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+  }
+
+  .md\:ventana-registro{
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    border-radius: 0.5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    min-width: 50%;
+  }
+
+  .md\:formulario-registro__input{
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-width: 2px;
+    border-radius: 0.5rem;
+  }
+
+  .md\:formulario-registro__checkbox{
+    position: relative;
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    border-width: 2px;
+    border-radius: 9999px;
+    transition-duration: 100ms;
+    width: 50px;
+    height: 30px;
+  }
+
+  input.md\:formulario-registro__checkbox:after {
+    content: "";
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 26px; height: 26px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid #e2e8f0;
+  }
+
+  input.md\:formulario-registro__checkbox:checked {
+    border-color: #4ED164;
+    background-color: #4ED164;
+    transition-duration: 200ms;
+  }
+
+  input.md\:formulario-registro__checkbox:checked:after {
+    left: 20px;
+  }
+
+  .md\:contenedor-select{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0.5rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+
+  .md\:formulario-registro__select{
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* =====================================Registro====================================== */
 
   .md\:space-y-0 > :not(template) ~ :not(template){
     --space-y-reverse: 0;
@@ -64078,7 +64348,7 @@ h6{
     color: #48bb78;
     color: rgba(72, 187, 120, var(--text-opacity));
     font-size: 3rem;
-    --text-opacity: 0.25;
+    --text-opacity: 0.5;
   }
 
   .lg\:slider__siguiente{
@@ -64089,7 +64359,7 @@ h6{
     color: #48bb78;
     color: rgba(72, 187, 120, var(--text-opacity));
     font-size: 3rem;
-    --text-opacity: 0.25;
+    --text-opacity: 0.5;
     right: 0;
   }
 
@@ -64256,7 +64526,7 @@ h6{
 
   .lg\:formulario-login__input{
     border-radius: 0.5rem;
-    border-top-width: 4px;
+    border-top-width: 2px;
     --bg-opacity: 1;
     background-color: #f7fafc;
     background-color: rgba(247, 250, 252, var(--bg-opacity));
@@ -64296,6 +64566,96 @@ h6{
   }
 
   /* =====================================Login====================================== */
+
+  /* =====================================Registro====================================== */
+
+  .lg\:registro-contenedor{
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+  }
+
+  .lg\:ventana-registro{
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    border-radius: 0.5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    min-width: 50%;
+  }
+
+  .lg\:formulario-registro__input{
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-width: 2px;
+    border-radius: 0.5rem;
+  }
+
+  .lg\:formulario-registro__checkbox{
+    position: relative;
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    border-width: 2px;
+    border-radius: 9999px;
+    transition-duration: 100ms;
+    width: 50px;
+    height: 30px;
+  }
+
+  input.lg\:formulario-registro__checkbox:after {
+    content: "";
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 26px; height: 26px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid #e2e8f0;
+  }
+
+  input.lg\:formulario-registro__checkbox:checked {
+    border-color: #4ED164;
+    background-color: #4ED164;
+    transition-duration: 200ms;
+  }
+
+  input.lg\:formulario-registro__checkbox:checked:after {
+    left: 20px;
+  }
+
+  .lg\:contenedor-select{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0.5rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+
+  .lg\:formulario-registro__select{
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* =====================================Registro====================================== */
 
   .lg\:space-y-0 > :not(template) ~ :not(template){
     --space-y-reverse: 0;
@@ -85122,7 +85482,7 @@ h6{
     color: #48bb78;
     color: rgba(72, 187, 120, var(--text-opacity));
     font-size: 3rem;
-    --text-opacity: 0.25;
+    --text-opacity: 0.5;
   }
 
   .xl\:slider__siguiente{
@@ -85133,7 +85493,7 @@ h6{
     color: #48bb78;
     color: rgba(72, 187, 120, var(--text-opacity));
     font-size: 3rem;
-    --text-opacity: 0.25;
+    --text-opacity: 0.5;
     right: 0;
   }
 
@@ -85300,7 +85660,7 @@ h6{
 
   .xl\:formulario-login__input{
     border-radius: 0.5rem;
-    border-top-width: 4px;
+    border-top-width: 2px;
     --bg-opacity: 1;
     background-color: #f7fafc;
     background-color: rgba(247, 250, 252, var(--bg-opacity));
@@ -85340,6 +85700,96 @@ h6{
   }
 
   /* =====================================Login====================================== */
+
+  /* =====================================Registro====================================== */
+
+  .xl\:registro-contenedor{
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+  }
+
+  .xl\:ventana-registro{
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    border-radius: 0.5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    min-width: 50%;
+  }
+
+  .xl\:formulario-registro__input{
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-width: 2px;
+    border-radius: 0.5rem;
+  }
+
+  .xl\:formulario-registro__checkbox{
+    position: relative;
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    border-width: 2px;
+    border-radius: 9999px;
+    transition-duration: 100ms;
+    width: 50px;
+    height: 30px;
+  }
+
+  input.xl\:formulario-registro__checkbox:after {
+    content: "";
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 26px; height: 26px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid #e2e8f0;
+  }
+
+  input.xl\:formulario-registro__checkbox:checked {
+    border-color: #4ED164;
+    background-color: #4ED164;
+    transition-duration: 200ms;
+  }
+
+  input.xl\:formulario-registro__checkbox:checked:after {
+    left: 20px;
+  }
+
+  .xl\:contenedor-select{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0.5rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+
+  .xl\:formulario-registro__select{
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* =====================================Registro====================================== */
 
   .xl\:space-y-0 > :not(template) ~ :not(template){
     --space-y-reverse: 0;
